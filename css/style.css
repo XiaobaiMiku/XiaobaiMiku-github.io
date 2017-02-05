@@ -1,0 +1,208 @@
+﻿@charset "utf-8";
+/*框架CSS*/
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline
+}
+.home {
+	width: 100%;
+	height: 100%;
+	background-color:#FFF;
+	overflow: hidden;
+	background-image:  -webkit-canvas(identifier);
+}
+.home canvas {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -9999;
+	background-color: #FFFFFF
+}
+.title{
+	width:100%;
+	height:30%;
+	left:0;
+	top:0;
+	position:fixed;
+	z-index: 233;
+}
+.text_title{
+	width:100%;
+	height:50px;
+	top:216px;
+	position:relative;
+	z-index:666;
+}
+.text_title a{
+	position: relative;
+	display: inline-block;
+	height: 48px;
+	width: 140px;
+	top:0px;
+	margin: 0px 17.5px;
+	text-decoration: none;
+	color: #666;
+	font-size: 18px;
+	text-align: center;
+	line-height: 60px;
+	font-weight: bold;
+	transition: top 0.5s,box-shadow 0.5s;
+	-moz-transition: top 0.5s,-moz-box-shadow 0.5s;
+	-webkit-transition: top 0.5s,-webkit-box-shadow 0.5s;
+	-o-transition: top 0.5s,-o-box-shadow 0.5s;
+	border-radius: 2px;
+}
+.text_title a:hover{
+	top:7px;
+	-o-box-shadow:  0px 10px 15px #DDD;
+	-moz-box-shadow:  0px 10px 15px #DDD;
+	-webkit-box-shadow:  0px 10px 15px #DDD;
+	box-shadow:  0px 10px 15px #DDD;
+}
+.back{
+	height:220px;
+	width:100%;
+	background:url(../photo/bg1.jpg);
+	left:0;
+	top:0;
+	-moz-background-size:100% 100%;
+    background-size:100% 100%;
+	position:absolute;
+}
+.colour{
+	width:100%;
+	height:2px;
+	top:220px;
+	background:url(../photo/top_border.png) repeat;
+	position:fixed;
+	z-index: 223;
+}
+
+.head{
+	width:150px;
+	height:150px;
+	background:url(../photo/head_samll.jpg) no-repeat;
+	left:44.7%;
+	top:105px;
+	border: solid 1px #BBBBBB;
+	position:absolute;
+	border-radius:75px;
+}
+.body{
+	width: 50%;
+	height: 55%;
+	min-height:404px;
+	left:25%;
+	top:40%;
+	background:#FFF;
+	position: fixed;
+	opacity:0.9;
+	border: solid 1px #BBBBBB;
+	border-radius:10px;
+	z-index:-233;
+}
+.smallW{
+/*	font-size:50px;
+	color:#FFF;
+	font-family:"微软雅黑";*/
+	left:35.4%;
+	top:69.5%;
+	position:absolute;
+}
+/*.job{
+	font-size:15px;
+	color:#FFF;
+	font-family:"仿宋";
+	left:35.5%;
+	top:92%;
+	position:absolute;
+}*/
+.myY{
+/*	font-size:28px;
+	color:#FFF;
+	font-family:"方正兰亭超细黑简体";*/
+	left:57.5%;
+	top:73.1%;
+	position:absolute;
+}
+/*.wish{
+	font-size:28px;
+	color:#FFF;
+	font-family:"方正兰亭超细黑简体";
+	left:57.5%;
+	top:87%;
+	position:absolute;
+}*/
+.top{
+	width:100%;
+	height:50%;
+	left:0;
+	top:0;
+	position:relative;
+}
+.botton{
+	width:100%;
+	height:50%;
+	left:0;
+	top:0%;
+	position:relative;
+}
+*,:after,:before{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box
+}
+.grid figure {
+	position: relative; 
+	float: left; 
+	overflow: hidden; 
+	margin: 1% 1%; 
+	width: 48%; 
+	height: 48%; 
+	border:#CCC 1px solid;
+	border-radius:10px;
+	text-align: center; 
+}
+.grid figure img {
+	border-radius:10px;
+	margin: 3px;
+	position: relative; 
+	display: block; 
+	max-height: 100%; 
+	max-width: 98.4%;
+}
+.grid figure figcaption {
+	padding: 2em; 
+	color: #666;
+	font-weight:bolder;
+	text-transform: uppercase; 
+	font-size: 1.26m; 
+	-webkit-backface-visibility: hidden; 
+	backface-visibility: hidden;
+}
+.grid figure figcaption, .grid figure figcaption > a {
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	height: 100%; 
+}
+
+/*---------------*/
+/***** 特技 *****/
+/*---------------*/
+
+figure.effect-jazz { background: -webkit-linear-gradient(-45deg, #EEE 0%, #EEE 100%); background: linear-gradient(-45deg, #EEE 0%, #EEE 100%); }
+figure.effect-jazz figcaption::after, figure.effect-jazz img, figure.effect-jazz p { -webkit-transition: opacity 0.5s, -webkit-transform 0.5s; transition: opacity 0.5s, transform 0.5s; }
+figure.effect-jazz figcaption::after { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-top: 1px solid #fff; border-bottom: 1px solid #fff; content: ''; opacity: 0; -webkit-transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 0, 1); transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 0, 1); -webkit-transform-origin: 50% 50%; transform-origin: 50% 50%; }
+figure.effect-jazz h2, figure.effect-jazz p { opacity: 1; -webkit-transform: scale3d(0.8, 0.8, 1); transform: scale3d(0.8, 0.8, 1); }
+figure.effect-jazz h2 { padding-top: 26%; -webkit-transition: -webkit-transform 0.35s; transition: transform 0.35s; }
+figure.effect-jazz p { padding: 0.5em 2em; text-transform: none; font-size: 0.85em; opacity: 0; }
+figure.effect-jazz:hover img { opacity: 0.4; -webkit-transform: scale3d(1.05, 1.05, 1); transform: scale3d(1.05, 1.05, 1); }
+figure.effect-jazz:hover figcaption::after { opacity: 1; -webkit-transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 1, 1); transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 1, 1); }
+figure.effect-jazz:hover h2, figure.effect-jazz:hover p { opacity: 1; -webkit-transform: scale3d(1, 1, 1); transform: scale3d(1, 1, 1); }
