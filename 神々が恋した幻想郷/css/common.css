@@ -295,12 +295,12 @@ animation: card_7 4s;
 
 /*滚动背景*/
 body{
-/*background: url(../img/background.png) repeat ;*/
+background: url(../img/background.png) repeat ;
 -webkit-animation: Scroll_background 40s linear infinite;
-/*-moz-animation: Scroll_background 40s linear infinite;*/
-/*-ms-animation: Scroll_background 40s linear infinite;*/
-/*-o-animation: Scroll_background 40s linear infinite;
-animation: Scroll_background 40s linear infinite;*/
+-moz-animation: Scroll_background 40s linear infinite;
+-ms-animation: Scroll_background 40s linear infinite;
+-o-animation: Scroll_background 40s linear infinite;
+animation: Scroll_background 40s linear infinite;
 }
 @-webkit-keyframes Scroll_background {
   from {
