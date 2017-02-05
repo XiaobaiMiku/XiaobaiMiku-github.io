@@ -1,0 +1,194 @@
+﻿<!--
+                       ::
+                      :;J7, :,                        ::;7:
+                      ,ivYi, ,                       ;LLLFS:
+                      :iv7Yi                       :7ri;j5PL
+                     ,:ivYLvr                    ,ivrrirrY2X,
+                     :;r@Wwz.7r:                :ivu@kexianli.
+                    :iL7::,:::iiirii:ii;::::,,irvF7rvvLujL7ur
+                   ri::,:,::i:iiiiiii:i:irrv177JX7rYXqZEkvv17
+                ;i:, , ::::iirrririi:i:::iiir2XXvii;L8OGJr71i
+              :,, ,,:   ,::ir@mingyi.irii:i:::j1jri7ZBOS7ivv,
+                 ,::,    ::rv77iiiriii:iii:i::,rvLq@huhao.Li
+             ,,      ,, ,:ir7ir::,:::i;ir:::i:i::rSGGYri712:
+           :::  ,v7r:: ::rrv77:, ,, ,:i7rrii:::::, ir7ri7Lri
+          ,     2OBBOi,iiir;r::        ,irriiii::,, ,iv7Luur:
+        ,,     i78MBBi,:,:::,:,  :7FSL: ,iriii:::i::,,:rLqXv::
+        :      iuMMP: :,:::,:ii;2GY7OBB0viiii:i:iii:i:::iJqL;::
+       ,     ::::i   ,,,,, ::LuBBu BBBBBErii:i:i:i:i:i:i:r77ii
+      ,       :       , ,,:::rruBZ1MBBqi, :,,,:::,::::::iiriri:
+     ,               ,,,,::::i:  @arqiao.       ,:,, ,:::ii;i7:
+    :,       rjujLYLi   ,,:::::,:::::::::,,   ,:i,:,,,,,::i:iii
+    ::      BBBBBBBBB0,    ,,::: , ,:::::: ,      ,,,, ,,:::::::
+    i,  ,  ,8BMMBBBBBBi     ,,:,,     ,,, , ,   , , , :,::ii::i::
+    :      iZMOMOMBBM2::::::::::,,,,     ,,,,,,:,,,::::i:irr:i:::,
+    i   ,,:;u0MBMOG1L:::i::::::  ,,,::,   ,,, ::::::i:i:iirii:i:i:
+    :    ,iuUuuXUkFu7i:iii:i:::, :,:,: ::::::::i:i:::::iirr7iiri::
+    :     :rk@Yizero.i:::::, ,:ii:::::::i:::::i::,::::iirrriiiri::,
+     :      5BMBBBBBBSr:,::rv2kuii:::iii::,:i:,, , ,,:,:i@petermu.,
+          , :r50EZ8MBBBBGOBBBZP7::::i::,:::::,: :,:,::i;rrririiii::
+              :jujYY7LS0ujJL7r::,::i::,::::::::::::::iirirrrrrrr:ii:
+           ,:  :@kevensun.:,:,,,::::i:i:::::,,::::::iir;ii;7v77;ii;i,
+           ,,,     ,,:,::::::i:iiiii:i::::,, ::::iiiir@xingjief.r;7:i,
+        , , ,,,:,,::::::::iiiiiiiiii:,:,:::::::::iiir;ri7vL77rrirri::
+         :,, , ::::::::i:::i:::i:i::,,,,,:,::i:i:::iir;@Secbone.ii:::
+		 
+-->
+<!doctype html>
+<html lang="zh"><head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>怎么可能会后悔</title>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script>
+$(document).ready(function(e) {
+	
+	
+    $("#strips_1").hover(function(){
+/*		$(this).addClass("strips__now").siblings().addClass("strips__hover");*/
+/*		$("#strips_2").animate({left:'30%',width:'17.5%'},300,function(){
+			$("#strips_3").animate({left:'47.5%',width:'17.5%'},300,function(){
+				$("#strips_4").animate({left:'65%',width:'17.5%'},300,function(){
+					$("#strips_5").animate({left:'82.5%',width:'17.5%'},300);
+				});
+			});
+		});*/
+		if(!$(".strips__strip:gt(0)").is(":animated")){
+			$(this).animate({width:'30%'},500).children().css('background','url(img/1_0.jpg)').css('background-size','100% 100%');
+			$("#strips_2").animate({left:'30%',width:'17.5%'},500);
+			$("#strips_3").animate({left:'47.5%',width:'17.5%'},500);
+			$("#strips_4").animate({left:'65%',width:'17.5%'},500);
+			$("#strips_5").animate({left:'82.5%',width:'17.5%'},500);
+		}
+		
+	},function(){
+		if(!$(".strips__strip:gt(0)").is(":animated")){
+			
+		}
+		$(this).animate({width:'20%'},300,function(){
+			$(this).children().css('background','url(img/1.jpg)').css('background-size','100% 100%');
+		});
+			$("#strips_2").animate({left:'20%',width:'20%'},300);
+			$("#strips_3").animate({left:'40%',width:'20%'},300);
+			$("#strips_4").animate({left:'60%',width:'20%'},300);
+			$("#strips_5").animate({left:'80%',width:'20%'},300);
+	});
+	$("#strips_2").hover(function(){
+		if(!$(".strips__strip:gt(1)").is(":animated")){
+			$(this).animate({left:'17.5%',width:'30%'},500).children().css('background','url(img/2_0.jpg)').css('background-size','100% 100%');
+			$("#strips_1").animate({width:'17.5%'},500);
+			$("#strips_3").animate({left:'47.5%',width:'17.5%'},500);
+			$("#strips_4").animate({left:'65%',width:'17.5%'},500);
+			$("#strips_5").animate({left:'82.5%',width:'17.5%'},500);
+		}
+		
+	},function(){
+		if(!$(".strips__strip:gt(1)").is(":animated")){
+			
+		}
+		$(this).animate({left:'20%',width:'20%'},300,function(){
+			$(this).children().css('background','url(img/2.jpg)').css('background-size','100% 100%');
+		});
+			$("#strips_1").animate({width:'20%'},300);
+			$("#strips_3").animate({left:'40%',width:'20%'},300);
+			$("#strips_4").animate({left:'60%',width:'20%'},300);
+			$("#strips_5").animate({left:'80%',width:'20%'},300);
+	});
+	$("#strips_3").hover(function(){
+		if(!$(".strips__strip:gt(2)").is(":animated")){
+			
+		}
+		$(this).animate({left:'35%',width:'30%'},500).children().css('background','url(img/3_0.jpg)').css('background-size','100% 100%');
+			$("#strips_1").animate({width:'17.5%'},500);
+			$("#strips_2").animate({left:'17.5%',width:'17.5%'},500);
+			$("#strips_4").animate({left:'65%',width:'17.5%'},500);
+			$("#strips_5").animate({left:'82.5%',width:'17.5%'},500);
+	},function(){
+		if(!$(".strips__strip:gt(2)").is(":animated")){
+			
+		}
+		$(this).animate({left:'40%',width:'20%'},300,function(){
+			$(this).children().css('background','url(img/3.jpg)').css('background-size','100% 100%');
+		});
+			$("#strips_1").animate({width:'20%'},300);
+			$("#strips_2").animate({left:'20%',width:'20%'},300);
+			$("#strips_4").animate({left:'60%',width:'20%'},300);
+			$("#strips_5").animate({left:'80%',width:'20%'},300);
+	});
+	$("#strips_4").hover(function(){
+		if(!$(".strips__strip:gt(3)").is(":animated")){
+			$(this).animate({left:'52.5%',width:'30%'},500).children().css('background','url(img/4_0.jpg)').css('background-size','100% 100%');
+			$("#strips_1").animate({width:'17.5%'},500);
+			$("#strips_2").animate({left:'17.5%',width:'17.5%'},500);
+			$("#strips_3").animate({left:'35%',width:'17.5%'},500);
+			$("#strips_5").animate({left:'82.5%',width:'17.5%'},500);
+		}
+		
+	},function(){
+		if(!$(".strips__strip:gt(3)").is(":animated")){
+			
+		}
+		$(this).animate({left:'60%',width:'20%'},300,function(){
+			$(this).children().css('background','url(img/4.jpg)').css('background-size','100% 100%');
+		});
+			$("#strips_1").animate({width:'20%'},300);
+			$("#strips_2").animate({left:'20%',width:'20%'},300);
+			$("#strips_3").animate({left:'40%',width:'20%'},300);
+			$("#strips_5").animate({left:'80%',width:'20%'},300);
+	});
+	$("#strips_5").hover(function(){
+		if(!$(".strips__strip:gt(3)").is(":animated")){
+			$(this).animate({left:'70%',width:'30%'},500).children().css('background','url(img/5_0.jpg)').css('background-size','100% 100%');
+			$("#strips_1").animate({width:'17.5%'},500);
+			$("#strips_2").animate({left:'17.5%',width:'17.5%'},500);
+			$("#strips_3").animate({left:'35%',width:'17.5%'},500);
+			$("#strips_4").animate({left:'52.5%',width:'17.5%'},500);
+		}
+		
+	},function(){
+		if(!$(".strips__strip:gt(3)").is(":animated")){
+			
+		}
+		$(this).animate({left:'80%',width:'20%'},300,function(){
+			$(this).children().css('background','url(img/5.jpg)').css('background-size','100% 100%');
+		});
+			$("#strips_1").animate({width:'20%'},300);
+			$("#strips_2").animate({left:'20%',width:'20%'},300);
+			$("#strips_3").animate({left:'40%',width:'20%'},300);
+			$("#strips_4").animate({left:'60%',width:'20%'},300);
+	});
+});
+</script>
+</head>
+<body>
+<audio src="media/Luminous Sword (夜光之剑) - 梶浦由記 (かじうら ゆき).mp3" autoplay></audio>
+<section class="strips">
+  <article class="strips__strip" id="strips_1">
+	<div class="strip__content">
+	</div>
+  </article>
+  <article class="strips__strip" id="strips_2">
+	<div class="strip__content">
+	  </div>
+	</div>
+  </article>
+  <article class="strips__strip" id="strips_3">
+	<div class="strip__content">
+	  </div>
+	</div>
+  </article>
+  <article class="strips__strip" id="strips_4">
+	<div class="strip__content">
+	  </div>
+	</div>
+  </article>
+  <article class="strips__strip" id="strips_5">
+	<div class="strip__content">
+	  </div>
+	</div>
+  </article>
+</section>
+</body>
+</html>
