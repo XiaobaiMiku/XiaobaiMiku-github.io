@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+#ann {
+width: 870px;
+height: 450px;
+margin: 35px 0 0 55px;
+float: left;
+}
+#ann_added_frame{
+height: 190px;
+width: 80px;
+float: right;
+margin: 160px -70px 0 0;
+}
+#ann_added_frame .icon {
+padding: 20px 0 0 10px;
+}
+.font_highlight {
+	color: #FF5C5C;
+}
+#container{
+	width: 870px; 
+	height: 450px; 
+	overflow:auto; 
+	max-height: 450px;  
+	position: relative;
+}
+#content{
+	width: 856px; 
+	position: relative; 
+	top: 0px;
+}
