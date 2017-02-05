@@ -1,0 +1,1 @@
+为浏览器快捷方式设置 --disable-web-security 使得可以访问本地资源
